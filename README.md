@@ -1,18 +1,34 @@
-# Andrewleachtx Vit
+# vit Homebrew tap
 
-## How do I install these formulae?
+Install [vit](https://github.com/andrewleachtx/vit), a minimal CLI for attaching
+visuals to Git commits. The Homebrew package is `vit-cli`; the command is `vit`.
 
-`brew install andrewleachtx/vit/<formula>`
+## Installation
 
-Or `brew tap andrewleachtx/vit` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "andrewleachtx/vit"
-brew "<formula>"
+```bash
+brew install andrewleachtx/vit/vit-cli
 ```
 
-## Documentation
+## Usage
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+From a Git repository with at least one commit:
+
+```bash
+vit attach render.png demo.mp4
+vit show
+```
+
+Both commands use `HEAD` by default. To choose a commit, pass its full hash or a
+unique prefix with `--hash`.
+
+vit keeps local copies of your files without changing Git history. Attachments
+are not transferred by `git push` or `git clone`.
+
+See the [vit README](https://github.com/andrewleachtx/vit#readme) for more examples.
+
+## Updates
+
+```bash
+brew update
+brew upgrade andrewleachtx/vit/vit-cli
+```
