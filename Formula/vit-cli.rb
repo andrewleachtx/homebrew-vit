@@ -5,7 +5,6 @@ class VitCli < Formula
   homepage "https://github.com/andrewleachtx/vit"
   url "https://github.com/andrewleachtx/vit/releases/download/v0.2.0/vit-0.2.0-py3-none-any.whl",
       using: :nounzip
-  version "0.2.0"
   sha256 "ee8e459185cd7bb03a558bd8897ecb333a7e360d62f0aaff4e477730ffb0101f"
   license "MIT"
 
